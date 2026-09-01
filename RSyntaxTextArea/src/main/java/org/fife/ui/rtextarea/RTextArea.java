@@ -888,6 +888,7 @@ public class RTextArea extends RTextAreaBase implements Printable {
 		markAllHighlightPainter = new SmartHighlightPainter(
 										markAllHighlightColor);
 		setMarkAllHighlightColor(markAllHighlightColor);
+		textMode = TextMode.INSERT;
 		carets = new EnumMap<>(TextMode.class);
 		setCaretStyle(TextMode.INSERT, CaretStyle.THICK_VERTICAL_LINE_STYLE);
 		setCaretStyle(TextMode.OVERWRITE, CaretStyle.BLOCK_STYLE);
